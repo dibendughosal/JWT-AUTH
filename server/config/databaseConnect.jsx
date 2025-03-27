@@ -9,7 +9,9 @@ const databaseConnect = () => {
     .then((conn)=> {
         console.log(`Connected to DB: ${conn.connection.host} successfully`)
     })
-    .catch ( () => {})
-
-    
+    .catch ( (err) => {
+        console.log(err.message);
+    })
 }
+
+module.exports = databaseConnect; 
