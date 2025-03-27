@@ -1,6 +1,4 @@
-const { default: mongoose } = require('mongoose');
-
-cosnt mongoose  = require('mongoose');
+const mongoose  = require('mongoose');
 
 const MongoDB_url = process.env.MONGODB_URL || "mongodb://localhost:27017/my_database" ; 
 
